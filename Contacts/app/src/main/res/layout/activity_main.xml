@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--主界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--搜索框-->
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--列表-->
+        <ListView
+            android:id="@+id/listview_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ff2222"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="#E9E9D5" />
+    </LinearLayout>
+    <!--添加按钮-->
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:onClick="add"
+        android:text="+"
+        android:textSize="20dp" />
+</LinearLayout>

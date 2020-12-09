@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--出入数据页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/button_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:text="Back" /><!--回退按钮-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="New Contact"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_finish1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="finish"
+            android:text="Finish" /><!--完成按钮-->
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="60dp" /><!--姓名编辑-->
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="60dp" /><!--电话编辑-->
+    <EditText
+        android:id="@+id/editText_company"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Company"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="60dp" /><!--公司编辑-->
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="60dp" /><!--电邮编辑-->
+</LinearLayout>
